@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Copyright (c) 2019 / VICTOR ELIAS MOLINA GUEVARA / TODOS LOS DERECHOS RESERVADOS -->
+	<!-- METADATA DE LA PAGINA WEB -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<!-- TITULO DE LA PAGINA WEB -->
+	<title>VG - EM</title>
+	<!-- LLAMADO DE LOS ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="fonts/font_awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!-- LLAMADO DE LOS SCRIPT JS -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<section class="contenedor">	
+		<!-- ENCABEZADO -->
+		<header>
+			<a href="" class="logo">VGEM</a>
+			<div class="menu_palanca"></div>
+			<nav>
+				<ul>
+					<li><a class="menu_item" id="n_inicio" onclick="inicio();">INICIO</a></li>
+					<li><a class="menu_item" id="n_proyectos" onclick="proyectos();">PROYECTOS</a></li>
+					<li><a class="menu_item" id="n_estudios" onclick="estudios();">ESTUDIOS</a></li>
+					<li><a class="menu_item" id="n_sobremi" onclick="sobremi();">ACERCA DE MI</a></li>
+					<li><a class="menu_item" id="n_contacto" onclick="contacto();">CONTACTO</a></li>
+					<li><a id="ocult_sidebar"><i class="fa fa-bars"></i></a></li>
+				</ul>
+			</nav>
+			<div class="limpiar_fix"></div>
+		</header>
+		<div class="sidebar_lat">
+			<ul>
+				<li><a href="#!" id="m_proyectos" onclick="proyectos();"><i class="fa fa-archive"></i>PROYECTOS</a></li>
+				<li><a href="#!" id="m_estudios" onclick="estudios();"><i class="fa fa-graduation-cap"></i>ESTUDIOS</a></li>
+				<li><a href="#!" id="m_sobremi" onclick="sobremi();"><i class="fa fa-diamond"></i>ACERCA DE MI</a></li>
+				<li><a href="#!" id="m_contacto" onclick="contacto();"><i class="fa fa-address-card"></i>CONTACTO</a></li>
+			</ul>
+		</div>
+		<!-- CONTENIDO -->
+		<div class="c_contenido margleft" id="c_contenido">
+			<!-- AQUI SE CARGA EL CONTENIDO -->
+		</div>
+
+		<!-- PIE DE PAGINA -->
+		<footer>
+			<div class="columna_footer">
+				<p class="ccolumna1f">&copy; 2019 VICTOR GUEVARA / TODOS LOS DERECHOS RESERVADOS</p>
+			</div>
+			<div class="columna_footer">
+				<button id="brn_scroll_proyectos" class="btn_scroll" onclick="desplazar_proyectos();"><i class="fa fa-arrows-v"></i></button>
+				<button id="brn_scroll_estudios" class="btn_scroll" onclick="desplazar_estudios();"><i class="fa fa-arrows-v"></i></button>
+				<button id="brn_scroll_sobremi" class="btn_scroll" onclick="desplazar_sobremi();"><i class="fa fa-arrows-v"></i></button>
+				<button id="brn_scroll_contacto" class="btn_scroll"><i class="fa fa-arrows-v"></i></button>
+				<p class="inf_btn">Desplazar</p>
+			</div>
+			<div class="columna_footer">
+				<div class="ccolumna3f">
+					<a href="https://www.linkedin.com/in/victor-guevara-251900161"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/victor_mguevara/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.facebook.com/VictorE.MGuevara"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.pinterest.com/VictorEMGuevara"><i class="fa fa-pinterest"></i></a>
+				</div>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>

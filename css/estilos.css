@@ -1,0 +1,533 @@
+/* ESTILOS DE ETIQUETAS */
+body {
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background: url(../rcs/imagenes/fondo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 0px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	display: block;
+	margin: 20px 0;
+	padding: 10px 20px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	border: 2px solid rgba(0, 0, 0, 0);
+	transition: 0.2s;
+}
+
+nav ul li a.menu_item:hover {
+	color: #FFF;
+	border-radius: 100px;
+	border: 2px solid #FFFFFF;
+	transition: 0.5s;
+}
+
+nav ul li a.menu_item:focus {
+	color: #FFF;
+	border-radius: 100px;
+	border: 2px solid #FFFFFF;
+	transition: 0.5s;
+}
+
+article.contenido {
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+	grid-gap: 20px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+footer {
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	left: 0px;
+}
+
+b {
+	color: rgba(255, 255, 255, 1);
+}
+
+button.btn_pnt_inicio {
+	padding: 10px 20px;
+    margin: 20px;
+    border-radius: 100px;
+    background: none;
+    color: #FFF;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    outline: none;
+    transition: 1s;
+}
+
+button.btn_pnt_inicio:hover {
+	background: rgba(0, 255, 200, 0.05);
+	color: rgba(255, 255, 40, 1);
+	border: 2px solid rgba(0, 255, 200, 1);
+    transition: 1s;
+}
+
+/* ESTILOS DE LAS CLASES */
+.contenedor {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+	color: rgba(0, 255, 200, 1);
+	height: 60px;
+	font-size: 20px;
+	line-height: 75px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.limpiar_fix {
+	clear: both;
+}
+
+.c_contenido {
+	background: none;
+	color: #FFFFFF;
+	margin-left: 17%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	width: auto;
+	height: 73vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidebar_lat {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+}
+
+.sidebar_lat ul li {
+	list-style: none;
+	color: #FFFF;
+	padding-top: 20px;
+}
+
+.sidebar_lat ul li a {
+	list-style: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	transition: 0.3s;
+}
+
+.sidebar_lat ul li a:hover {
+	color: rgba(0, 255, 200, 1);
+	transition: 0.3s;
+}
+
+.sidebar_lat ul li a:focus {
+	color: rgba(0, 255, 200, 1);
+	text-shadow: 0 0 20px rgba(0, 255, 200, 1);
+	transition: 0.3s;
+}
+
+.sidebar_lat ul li a.active {
+	color: rgba(0, 255, 200, 1);
+	text-shadow: 0 0 20px rgba(0, 255, 200, 1);
+	transition: 0.3s;F;
+}
+
+.sidebar_lat ul li a i {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.contenido .box_contn {
+	position: relative;
+	padding: 10px;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.contenido .box_contn p {
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+}
+
+.contenido .box_contn h1 {
+	color: rgba(0, 255, 200, 1);
+	margin: 20px 0 0;
+	padding: 0;
+	transition: 0.5s;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	transition: 1s;
+}
+
+.contenido .box_contn h4 {
+	color: rgba(0, 255, 200, 1);
+	padding: 0;
+	transition: 0.5s;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 10px;
+	transition: 1s;
+}
+
+.contenido .box_contn h1 span {
+	color: rgba(255, 255, 40, 1);
+	font-size: 12px;
+}
+
+.contenido .box_contn .img_box img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+	transition: 1s;
+}
+
+.contenido .box_contn p.p_contacto i {
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.contenido .box_contn p.p_contacto {
+	margin: 10px;
+	font-size: 12px;
+}
+
+.contenido .box_contn a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+}
+
+.columna_footer {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+.btn_scroll {
+	background: none;
+	color: rgba(255, 255, 255, 1);
+	border-radius: 100px;
+	border: 2px solid #FFF;
+	padding: 12px;
+	outline: none;
+	transition: 0.5s;
+}
+
+.btn_scroll:hover {
+	background: rgba(0, 255, 200, 0.05);
+	color: rgba(0, 255, 200, 1);
+	border: 2px solid rgba(0, 255, 200, 1);
+	transition: 0.5s;
+}
+
+.btn_scroll:disabled {
+	background: rgba(100, 100, 100, 1);
+	border-color: rgba(100, 100, 100, 1);
+	color: rgba(150, 150, 150, 1);
+	transition: 0.3s;
+}
+
+.inf_btn {
+	font-size: 10px;
+}
+
+.ccolumna1f, .ccolumna3f {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.ccolumna3f a {
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.ccolumna3f a:hover {
+	color: rgba(0, 255, 200, 1);
+	font-size: 14px;
+	transition: 0.5s;
+}
+
+.ccolumna3f a:focus {
+	color: rgba(0, 255, 200, 1);
+	text-shadow: 0 0 20px rgba(0, 255, 200, 1);
+	font-size: 14px;
+	transition: 0.5s;
+}
+
+.displaySB{
+	display: none;
+}
+
+.margleft {
+	transition: 0.3s;
+}
+
+.marginleft {
+	margin-left: 5%;
+	transition: 0.3s;
+}
+
+.point_scroll {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 25px;
+}
+
+.point_scroll ul li {
+	list-style: none;
+}
+
+.point_scroll ul li a {
+	list-style: none;
+	text-decoration: none;
+	color: #909090;
+	font-size: 5px;
+}
+
+.point_scroll ul li a:hover {
+	list-style: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: 0 0 20px #FFFFFF;
+	font-size: 5px;
+}
+
+.point_scroll ul li a:focus {
+	list-style: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: 0 0 20px #FFFFFF;
+	font-size: 5px;
+}
+
+.point_scroll ul li a.active {
+	list-style: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: 0 0 20px #FFFFFF;
+	font-size: 5px;
+}
+
+/* RESPONSIVO PARA PANTALLAS DE 768PX */
+@media (max-width: 768px) {
+	/* ESTILOS DE LAS ETIQUETAS */
+	nav {
+		display: none;
+	}
+
+	nav.active {
+		display: block;
+		width: 100%;
+		position: fixed;
+	    z-index: 1;
+	    margin-top: 50px;
+	    background: rgba(0,0,0,0.8);
+	}
+
+	nav.active ul {
+		display: block;
+	}
+
+	nav.active ul li a {
+		margin: 0;
+		text-align: center;
+	}
+
+	nav ul li a.menu_item:hover {
+		background: rgba(0, 255, 166, 0.2);
+		color: rgba(255, 255, 40, 1);
+		border: 0;
+		border-radius: 0;
+		transition: 0.5s;
+	}
+
+	nav ul li a.menu_item:focus {
+		background: rgba(0, 255, 166, 0.2);
+		color: rgba(255, 255, 40, 1);
+		border: 0;
+		border-radius: 0;
+		transition: 0.5s;
+	}
+
+	article p {
+		font-size: 13px;
+	}
+
+	article h1 {
+		font-size: 20px;
+	}
+
+	/* ESTILOS DE LAS CLASES */
+	.logo {
+		line-height: 60px;
+	}
+
+	.sidebar_lat {
+		display: none;
+	}
+
+	.point_scroll {
+		display: none;
+	}
+
+	.c_contenido {
+		margin-left: 5%;
+	}
+
+	.menu_palanca {
+		display: block;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		float: right;
+		cursor: pointer;
+		text-align: center;
+		font-size: 30px;
+		color: #FFFFFF;
+	}
+
+	.menu_palanca:before {
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+
+	.menu_palanca.active:before {
+		content: '\f00d';
+	}
+
+	.ccolumna1f {
+		margin-left: 12px;
+		font-size: 10px;
+	}
+
+	.ccolumna3f {
+		margin-right: 12px;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contenido .box_contn h1 {
+		font-size: 18px;
+		transition: 1s;
+	}
+
+	.contenido .box_contn .img_box img {
+		width: 100px;
+		height: 100px;
+		transition: 1s;
+	}
+}
+
+@media (max-width: 380px) {
+	.contenido .box_contn h1 {
+		font-size: 16px;
+		transition: 1s;
+	}
+
+	.contenido .box_contn .img_box img {
+		width: 90px;
+		height: 90px;
+		transition: 1s;
+	}
+}
+
+/* RESPONSIVO POR MEDIO DE LA ALTURA DEL DISPOSITIVO */
+/* RESPONSIVO PARA PANTALLAS DE 1366PX DE ALTO */
+@media (min-height: 1366px) {
+	/* ESTILOS DE LAS CLASES */
+	.c_contenido {
+		height: 85vh;
+	}
+}
+
+/* RESPONSIVO PARA PANTALLAS DE 768PX DE ALTO */
+@media (max-height: 768px) {
+	.c_contenido {
+		height: 70vh;
+	}
+}
+
+/* RESPONSIVO PARA PANTALLAS DE 568PX DE ALTO */
+@media (max-height: 568px) {
+	.contenido .box_contn h1 {
+		font-size: 12px;
+		transition: 1s;
+	}
+
+	.contenido .box_contn p {
+		font-size: 12px;
+		text-align: justify;
+		transition: 1s;
+	}
+	
+	.contenido .box_contn .img_box img {
+		display: none;
+	}
+
+	.contenido .box_contn h4 {
+		font-size: 11px;
+		transition: 1s;
+	}
+	.contenido .box_contn p.p_contacto i {
+		margin-right: 20px;
+		font-size: 11px;
+	}
+}
